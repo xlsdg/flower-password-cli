@@ -9,6 +9,13 @@ $ npm install -g flower-password-cli
 ```
 
 
+## Update
+
+```
+$ npm update -g flower-password-cli
+```
+
+
 ## Usage
 
 ```
