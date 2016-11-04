@@ -12,7 +12,7 @@ $ npm install -g flower-password-cli
 ## Usage
 
 ```
-$ fpcode
+$ fpcode -h
 ```
 
 
