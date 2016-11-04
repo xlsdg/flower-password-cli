@@ -7,10 +7,12 @@ const Chalk = require('chalk');
 const Yargs = require('yargs');
 const Inquirer = require('inquirer');
 const FpCode = require('node-flower-password');
+const Clip = require('cliparoo');
 
 
 let gArgv = null;
 let arrLength = [];
+
 
 const inputPassword = {
     'type': 'password',
@@ -43,6 +45,7 @@ const inputLength = {
     default: '16',
     choices: []
 };
+
 
 main();
 
@@ -117,7 +120,10 @@ function showMenu() {
 }
 
 function showCode(password, key, length) {
-    return console.log('\r\n' + Chalk.white.bold(`Code: `) + Chalk.cyan(FpCode(password, key, length)) + '\r\n');
+    let code = FpCode(password, key, length);
+    return Clip(code, function(err) {
+        return console.log('\r\n' + Chalk.white.bold(`Code: `) + Chalk.cyan(code) + '\r\n');
+    });
 }
 
 function menuMain(password, key, length) {

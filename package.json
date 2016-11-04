@@ -27,6 +27,7 @@
   "homepage": "https://github.com/xlsdg/flower-password-cli#readme",
   "dependencies": {
     "chalk": "^1.1.3",
+    "cliparoo": "^1.1.1",
     "inquirer": "^1.2.2",
     "node-flower-password": "^1.0.0",
     "yargs": "^6.3.0"
