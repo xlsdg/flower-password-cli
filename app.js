@@ -122,7 +122,7 @@ function showMenu() {
 function showCode(password, key, length) {
     let code = FpCode(password, key, length);
     return Clip(code, function(err) {
-        return console.log('\r\n' + Chalk.white.bold(`Code: `) + Chalk.cyan(code) + '\r\n');
+        return console.log('\r\n' + Chalk.white.bold(`Code: `) + Chalk.cyan(code) + '  copied!\r\n');
     });
 }
 
