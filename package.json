@@ -28,8 +28,8 @@
   "dependencies": {
     "chalk": "^1.1.3",
     "cliparoo": "^1.1.1",
-    "inquirer": "^1.2.2",
+    "inquirer": "^1.2.3",
     "node-flower-password": "^1.0.0",
-    "yargs": "^6.3.0"
+    "yargs": "^6.4.0"
   }
 }
